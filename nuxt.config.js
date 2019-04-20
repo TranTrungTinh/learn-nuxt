@@ -1,6 +1,6 @@
-import pkg from './package'
+const pkg = require('./package')
 
-export default {
+module.exports = {
   mode: 'universal',
 
   /*
@@ -14,14 +14,15 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css?family=Open+Sans" }
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#3B8070' },
 
   /*
   ** Global CSS
@@ -49,6 +50,7 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+
     }
   }
 }

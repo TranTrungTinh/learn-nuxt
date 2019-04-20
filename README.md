@@ -1,6 +1,6 @@
-# learn-nuxt
+# nuxt-course
 
-> My wicked Nuxt.js project
+> Nuxt.js course for Udemy
 
 ## Build Setup
 
